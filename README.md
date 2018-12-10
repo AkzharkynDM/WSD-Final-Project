@@ -3,8 +3,8 @@ The final project "Online game store for JavaScript games" for Web Software Deve
 
 # Members:
 Akzharkyn Duisembiyeva 727406
-Ahmed Aly Bedair
-Shamim Biswas
+Ahmed Ali Bedair 7 27176
+Shamim Biswas 727228
 
 # Application overview:
 Online game store for JavaScript games
