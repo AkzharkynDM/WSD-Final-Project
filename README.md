@@ -13,7 +13,7 @@ Online game store for JavaScript games </br>
 Register as a player and developer </br>
 As a developer: add games to their inventory, see list of game sales </br>
 As a player: buy games, play games, see game high scores and record their score to it </br>
-![alt tag](https://github.com/AkzharkynDM/WSD-Final-Project/issues/1#issuecomment-445705782)
+![the sequence diagram for project](https://github.com/AkzharkynDM/WSD-Final-Project/issues/1#issuecomment-445705782)
 
 # Models:
 ## Game
@@ -50,7 +50,7 @@ inventory_games = models.CharField(max_length=64)
 3. Message other players
 
 # Security threat analysis
-The following security issues should be considered during complation of project. <\br>
+The following security issues should be considered during complation of project: 
 1. Stealing users' payment data
 2. Updating users' credentials
 3. Impersonating a player
@@ -61,7 +61,9 @@ The following security issues should be considered during complation of project.
 8. Impersonating a developer
 
 # Working methods:
-Regular face-to-face meetings, Skype conferences. 
+1. Regular face-to-face meetings, Skype conferences, using messaging applications for tracking the progress
+2. The verification of code must be done by 1 or 2  members before the user can merge their branch dedicated to one frature into master 
+3. Enabling continuous integration (Built-in CI tool ) and deployment (Heroku), where the deployment of app is triggered automatically after the tests have passed successfully. Contunous checking of branches and testing should be enabled.
 
 # Implementation steps:
 frontend - initial design with HTML pages will be implemented. After the completion of logic and functionality of app, the improvement on frontend will be done. </br>
