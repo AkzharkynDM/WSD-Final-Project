@@ -12,7 +12,7 @@ Features of application:
 Register as a player and developer
 As a developer: add games to their inventory, see list of game sales
 As a player: buy games, play games, see game high scores and record their score to it
-https://github.com/AkzharkynDM/WSD-Final-Project/issues/1#issuecomment-445705782
+![alt tag](https://github.com/AkzharkynDM/WSD-Final-Project/issues/1#issuecomment-445705782)
 
 # Models and views:
 Game
