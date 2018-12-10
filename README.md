@@ -27,16 +27,39 @@ earned_money = models.CharField(max_length=64)
 ## Player
 name = models.CharField(max_length=64) </br>
 credit_card_info = models.CharField(max_length=64)
+inventory_games = models.CharField(max_length=64)
 
 # Views
 ## Game
 1. Play game
 2. Update the game with new version, delete game
+3. View all games
+4. Get the rank of players
+5. Get the rank of developers
+
+## Game service
+1. Update the rank of players with highest score
+2. Get and process messages: save/load game state messages, error messages, messages for configuration changes 
 
 ## Developer
 1. Profile of developer which shows how much money and which games were done by this developer. Should be visible for develoepr only.
+2. Place your game - this page allows developers with put the urls to their games and share it with player.
 ## Player
-2. Profile of player which shows the credit card information and credentials of player. Should be visible for player only.
+1. Profile of player which shows the credit card information and credentials of player. Should be visible for player only.
+2. Purchase a game
+3. Message other players
+
+# Security threat analysis
+The following security issues should be considered during complation of project. <\br>
+1. Stealing users' payment data
+2. Updating users' credentials
+3. Impersonating a player
+4. Modifying requests to gaming service as changing the highest score, loading/modiying exsiting games' data
+5. Removing game form service, which can be performed by completing developers
+6. Stealing developers' payment data
+7. Updating develoeprs' credentials
+8. Impersonating a developer
+
 # Working methods:
 Regular face-to-face meetings, Skype conferences. 
 
