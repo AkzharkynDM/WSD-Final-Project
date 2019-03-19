@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            
+
+            <div class="panel-body">  
+                <h3 class="panel-title">Register successful</h3>
+                <p align="center">You will be logged in in a few seconds</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<meta http-equiv="refresh" content="3;url={% url 'home' %}" />
+{% endblock %}
+
+{% block javascript %}
+
+
+<!-- empyt navbar on login screen  -->
+<script>
+    $(".nav-link").css("display","none");
+</script>
+
+
+{% endblock %}
+

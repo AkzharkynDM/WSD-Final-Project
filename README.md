@@ -1,4 +1,5 @@
-# WSD-Final-Project
+# WSD-Final-Project-AkShBe
+
 The final project "Online game store for JavaScript games" for Web Software Development course
 
 # Members:
@@ -13,7 +14,7 @@ Online game store for JavaScript games </br>
 Register as a player and developer </br>
 As a developer: add games to their inventory, see list of game sales </br>
 As a player: buy games, play games, see game high scores and record their score to it </br>
-![the sequence diagram for project](https://github.com/AkzharkynDM/WSD-Final-Project/issues/1#issuecomment-445705782)
+![the sequence diagram for project](ourdiagram.png)
 
 # Models:
 ## Game
@@ -75,7 +76,6 @@ The project needs to be completed by the end of 3rd term. The general milestones
 19.1 - End of backend functionality, proper testing of backend, logic of game </br>
 10.2 - Improving the frontend of application, resolving security issues </br>
 19.2 - Testing of full application and deploying in Heroku </br>
-
 
 
 

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% if form.errors %}
+<div class="formErrors">
+ <ul>
+   {% for key, value in form.errors.items %}
+   {% for error in value %}
+   <li>{{ error }}</li>
+   {% endfor %}
+   {% endfor %}
+ </ul>
+</div>
+{% endif %}
+
+
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+
+
+      <div class="panel-body">
+
+        <div class="panel-heading panel-heading-custom">
+          <h3 class="panel-title">Register as</h3>
+        </div>
+        <hr/>
+        
+        <a href="{% url 'Player_register' %}" data-toggle="tooltip" title="buy and play games">Player</a>
+
+        <a href="{% url 'Developer_register' %}" data-toggle="tooltip" title="Upload games and earn credits">Developer</a>
+
+        <hr/>
+        <a href="{% url 'login' %}">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block javascript %}
+
+
+<!-- empyt navbar on login screen  -->
+
+{% if not user.is_authenticated %}
+<script>
+  $(".nav-link").css("display","none");
+</script>
+{% endif %}
+
+
+
+{% endblock %}

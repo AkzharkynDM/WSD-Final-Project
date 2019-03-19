@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            
+
+            <div class="panel-body">
+
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">Register</h3>
+                </div>
+                <hr/>
+
+                <form method="post">
+                    <fieldset>
+
+                        {# Cross Site Request Forgery protection #}
+                        {% csrf_token %}
+                        
+                        {{ form.username}}
+                        {{ form.email }}
+                        {{ form.password1 }}
+                        {{ form.password2 }}
+                        
+                        <input class="btn btn-lg btn-success btn-block" type="submit" value="Sign up">
+                        <input type="hidden" name="next" value="{{ next }}" />
+                    </fieldset>
+                </form>
+                <hr/>
+                <a href="{% url 'login' %}">Already have an account? Login</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block javascript %}
+
+
+
+<script>
+        // empyt navbar on login screen
+        $(".nav-link").css("display","none");
+
+        $("#id_username").attr("class","form-control")
+        .attr("placeholder","username");
+
+        $("#id_email").attr("class","form-control")
+        .attr("placeholder","email");
+        
+        $("#id_password1").attr("class","form-control")
+        .attr("placeholder","password");
+        
+        $("#id_password2").attr("class","form-control")
+        .attr("placeholder","retype password");
+        
+
+    </script>
+
+
+    {% endblock %}
+    

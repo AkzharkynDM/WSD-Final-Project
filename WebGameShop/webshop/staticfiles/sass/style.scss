@@ -1,0 +1,201 @@
+//colors
+$color_bottle_green_approx: #093028;
+$color_eucalyptus_approx: #237a57;
+$color_salmon_approx: salmon;
+$white: white;
+$color_azure_approx: #3b5998;
+$color_rhino_approx: #283c67;
+$gray: grey;
+$color_downriver_approx: #0d2456;
+$color_fern_approx: #5cb85c;
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: $color_bottle_green_approx;
+	background: linear-gradient(to left, $color_bottle_green_approx , $color_eucalyptus_approx);
+	background: linear-gradient(to left, $color_bottle_green_approx , $color_eucalyptus_approx);
+}
+input {
+	margin: 10px 0;
+}
+
+// HEADER & NAVBAR
+
+#header nav {
+	margin-bottom: 0;
+	background-color: $color_salmon_approx;
+	border: none;
+	display: fixed;
+	button {
+		&:hover {
+			outline: none;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			outline: none;
+		}
+	}
+	a {
+		font-size: 22px;
+		font-weight: 900;
+		color: $color_eucalyptus_approx;
+		&:hover {
+			text-decoration: none;
+			color: $color_bottle_green_approx;
+		}
+	}
+}
+
+#section1 {
+	margin: 30px 0 0 0;
+}
+
+// FORM
+
+.formErrors {
+	color: $white;
+}
+.panel-heading {
+	background-color: inherit;
+}
+.button-container {
+	text-align: center;
+	margin-left: 5px;
+	margin-bottom: 15px;
+}
+.panel-title {
+	text-align: center;
+}
+.panel-body {
+	border: 1px solid $white;
+	border-radius: 12px;
+	padding: 20px;
+	background: linear-gradient(to left, $color_bottle_green_approx , $color_eucalyptus_approx);
+	color: $white;
+	> h4 {
+		text-align: center;
+	}
+	> a {
+		text-align: center;
+		display: block;
+		color: $white;
+	}
+}
+.btn-facebook {
+	background: $color_azure_approx;
+	color: $white;
+	&:hover {
+		background: $color_rhino_approx;
+		color: $white;
+	}
+}
+.or {
+	background: $gray;
+	outline: 0 !important;
+}
+.btn-group > .btn {
+	color: $white;
+}
+.developer.active {
+	background: $color_salmon_approx;
+	outline: 0 !important;
+	border-color: $color_downriver_approx;
+}
+.player.active {
+	background: $color_fern_approx;
+	outline: 0 !important;
+	border-color: $color_downriver_approx;
+}
+
+// @media(min-width: 768px) {
+// 	.card-columns {
+
+// 		column-count: 3;
+
+// 		column-gap: 1.25rem;
+// 		.card {
+// 			display: inline-block;
+// 			width: 100%;
+// 			margin-bottom: 0.75rem;
+// 		}
+// 	}
+// }
+// @media(min-width: 992px) {
+// 	.card-columns {
+
+// 		column-count: 4;
+
+// 		column-gap: 1.25rem;
+// 		.card {
+// 			display: inline-block;
+// 			width: 100%;
+// 			margin-bottom: 0.75rem;
+// 		}
+// 	}
+// }
+// @media(min-width: 1200px) {
+// 	.card-columns {
+
+// 		column-count: 5;
+
+// 		column-gap: 1.25rem;
+// 		.card {
+// 			display: inline-block;
+// 			width: 100%;
+// 			margin-bottom: 0.75rem;
+// 		}
+// 	}
+// }
+
+
+
+// HOME.HTML
+
+	#games, #myGames {
+		height: 100%;
+		width: 100%;
+	}
+	.games_section {
+		height: 100%;
+		width: 100%;
+
+		.games {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			.game {
+				display: inline-block;
+				margin: 10px 9px;
+				width: 320px;
+				.card {
+					.card-img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+
+	#myGames {
+		.game {
+			width: 210px;
+			margin: 5px 4px;
+		}
+	}
+
+// PROFILE.HTML
+
+#myProfile #myInfo #profile_image {
+	width: 100%;
+	height: 400px;
+}

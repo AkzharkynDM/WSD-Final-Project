@@ -1,0 +1,7 @@
+#myCanvas {
+	border: 1px solid black;
+	background: #3390a9;
+	display: : block;
+	margin: 0 auto;
+	position: absolute;
+}

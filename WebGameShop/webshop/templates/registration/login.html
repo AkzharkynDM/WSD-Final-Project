@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% if form.errors %}
+<div class="formErrors">
+ <ul>
+     {% for key, value in form.errors.items %}
+     {% for error in value %}
+     <li>{{ error }}</li>
+     {% endfor %}
+     {% endfor %}
+ </ul>
+</div>
+{% endif %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- empty navbar on login screen  -->
+
+{% if not user.is_authenticated %}
+<script type="text/javascript">
+    $(".nav-link").css("display","none");
+</script>
+{% endif %}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+
+
+            <div class="panel-body">
+
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">Login as</h3>
+                </div>
+                <hr/>
+
+                <form method="post" action="{% url 'login' %}">
+                    <fieldset>
+
+                        {# Cross Site Request Forgery protection #}
+                        {% csrf_token %}
+
+                        {# from log/forms.py #}
+                        {{ form.username }}
+                        {{ form.password }}
+
+
+                        <input class="btn btn-lg btn-success btn-block" type="submit" value="login">
+
+                        <input type="hidden" name="next" value="{{ next }}" />
+                    </fieldset>
+                </form>
+                <hr/>
+                <a href="{% url 'register_as' %}">No account? Sign up</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+
+
+            <div class="panel-body">
+
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">© 2019 <b>Web software development final project</b> </h3>
+                </div>
+                <hr/>
+                <div class="contact">
+                  <p><b>Contact us</b></p>
+                  <p><i class="fa fa-envelope"></i> E-mail: akzharkyn.duisembiyeva@aalto.fi</p>
+                  <hr>
+                  <div class="snap">Access and share our site with snapchat   <i style="font-size:24px" class="fa">&#xf2ab;</i></div>
+                  <img src="../static/games/snake/assets/img/snap.png" style="margin-top: 20px;" alt="no snap image">
+              </div>
+              <div class="contact"><a href="../static/games/snake/assets/img/snap.png" download="snap.png" style="color: white;">Download</a></div>
+
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,164 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+   }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
+  padding: 0;
+  position: relative;
+  background: #093028;
+  background: linear-gradient(to left, #093028, #237a57);
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+  
+}
+
+input {
+  margin: 10px 0; }
+
+#header nav {
+  margin-bottom: 0;
+  background-color: white;
+  border: none;
+ }
+  #header nav button:hover {
+    outline: none; }
+  #header nav button:focus {
+    outline: none; }
+  #header nav button:active {
+    outline: none; }
+  #header nav a {
+    font-size: 22px;
+    font-weight: 900;
+    color: #237a57;
+    }
+    #header nav a:hover {
+      text-decoration: none;
+      color: #093028; }
+
+
+
+.formErrors {
+  color: white; }
+
+.panel-heading {
+  background-color: inherit; }
+
+.button-container {
+  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 15px; }
+
+.panel-title {
+  text-align: center; }
+
+.panel-body {
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(to left, #093028, #237a57);
+  color: white; }
+  .panel-body > h4 {
+    text-align: center; }
+  .panel-body > a {
+    text-align: center;
+    display: block;
+    color: white; }
+
+.btn-facebook {
+  background: #3b5998;
+  color: white; }
+  .btn-facebook:hover {
+    background: #283c67;
+    color: white; }
+
+.or {
+  background: grey;
+  outline: 0 !important; }
+
+.btn-group > .btn {
+  color: white; }
+
+
+#games, #myGames {
+  height: 100%;
+  width: 100%; }
+
+.games_section {
+  height: 100%;
+  width: 100%;
+   }
+  .games_section .games {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .games_section .games .game {
+      display: inline-block;
+      margin: 10px 9px;
+      width: 320px; }
+      .games_section .games .game .card .card-img {
+        width: 100%;
+        height: auto; }
+
+#myGames .game {
+  width: 210px;
+  margin: 5px 4px; }
+
+#myProfile #myInfo #profile_image {
+  width: 100%;
+  height: 400px; }
+
+#my_info {
+  list-style-type: none;
+  color: white;
+}
+
+div > ol {
+  text-align: center;
+  list-style-position:inside;
+  margin-right: 60px;
+}
+
+.card-title{
+  color: #237a57;
+
+}
+
+.card{
+  background: white;
+
+}
+
+.buy{
+  background-color: #237a57; 
+}
+
+.contact {
+  text-align: center;
+}
+
+iframe{
+  max-height: 800px;
+  max-width: 800px;
+  border: none; 
+}
+
+.snap {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */

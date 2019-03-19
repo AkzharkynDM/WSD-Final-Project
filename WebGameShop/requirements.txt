@@ -1,0 +1,11 @@
+argh==0.26.2
+Django==2.1.3
+django-livesync==0.4
+pathtools==0.1.2
+Pillow==5.4.1
+pytz==2018.7
+PyYAML==3.13
+six==1.12.0
+tornado==4.5.1
+watchdog==0.9.0
+websocket-client==0.54.0

@@ -1,0 +1,51 @@
+[
+  {
+    "model": "webshop.Game",
+    "pk": 1,
+    "fields": {
+      "name": "mock",
+      "description": "description 1",
+      "times_purchased": 0
+    }
+  },
+  {
+    "model": "webshop.Game",
+    "fields": {
+      "name": "mock 2",
+      "description": "description 2",
+      "times_purchased": 9
+    }
+  },
+  {
+    "model": "webshop.Game",
+    "fields": {
+      "name": "mock",
+      "description": "description 1",
+      "times_purchased": 0
+    }
+  },
+  {
+    "model": "webshop.Game",
+    "fields": {
+      "name": "mock 2",
+      "description": "description 2",
+      "times_purchased": 9
+    }
+  },
+  {
+    "model": "webshop.Game",
+    "fields": {
+      "name": "mock",
+      "description": "description 1",
+      "times_purchased": 0
+    }
+  },
+  {
+    "model": "webshop.Game",
+    "fields": {
+      "name": "mock 2",
+      "description": "description 2",
+      "times_purchased": 9
+    }
+  }
+]

@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- STOMACH -->
+<!-- {% if user.is_authenticated %} -->
+
+<!--{% for group in user.groups.all %}
+
+{% if group.name == 'Developers' %}
+<meta http-equiv="refresh" content="0;url={% url 'profile' %}" />
+
+{% else %}-->
+
+
+<div class="container" id="games">
+	<section class="games_section">
+		<ul class="games">
+
+			{% for game in games %}
+
+			<li class="game row-eq-height card-deck">
+
+				<div class="card ">
+					<div class="card-block ">
+						<h4 class="card-title">
+							<b>{{ game.title }}</b>
+						</h4>
+					</div>
+					{% if game.title == "Snek" %}
+					<img src="static/img/snake_image.png" class="card-img img-fluid" alt="no Picture">
+					{% elif game.title == 'BrickPong' %}
+					<img src="static/img/BrickPong_image.png" class="card-img img-fluid" alt="no Picture">
+					{% elif game.image %}
+					<img src="{{ game.image }}" class="card-img img-fluid" alt="no Picture">
+					{% else %}
+					<img src="http://placehold.it/600x300">
+					{% endif %}
+
+					<div class="card-block">
+						<p>Description</p>
+						{{ game.description }}
+					</div>
+
+					<div class="card-block">
+						<p class="card-text">&lt;/&gt; Developer &lt;/&gt; </p>
+						<p>{{ game.developer }}</p>
+					</div>
+					<div class="card-block">
+						<a href="{% url 'buy' game.title %}" id="{{ game.id }}" class="buy btn btn-primary">Buy for
+							{{ game.price }} €
+						</a>
+						<script>var test = 0;</script>
+						{% for save in saves %}
+						{% if save.user == user.username and save.title == game.title %}
+						<script>
+							test = 1;
+						</script>
+						<!-- <a href="{{ game.id }}" class="card-link play">Play Game</a> -->
+						{% endif %}
+						{% endfor %}
+
+						<script>
+							if (test == 1) {
+								document.getElementById("{{ game.id }}").href="{% url 'game' game.id %}";
+								document.getElementById("{{ game.id }}").innerHTML="Play";
+							}
+						</script>
+
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Times bought: {{ game.times_bought}}</small>
+					</div>
+				</div>
+
+			</li>
+
+			{% endfor %}
+
+		</ul>
+	</section>
+</div>
+
+
+
+
+<!--{% endif %}
+
+{% endfor %}
+
+{% else %}
+<meta http-equiv="refresh" content="0;url={% url 'login' %}" />
+{% endif %}-->
+
+
+
+
+
+
+{% endblock %}
